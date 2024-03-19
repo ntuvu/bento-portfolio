@@ -1,43 +1,9 @@
+import GridItem from "@/components/grid-item";
+import SocialBox from "@/components/grid-items/social-box";
 import { ThemeToggle } from "@/components/theme-toogle";
 import { siteConfig } from "@/config/site-config";
 import { GridIcon, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
-
-const GridItems = new Array(30).fill(0);
-console.log(GridItems);
-
-const GridItems2 = [
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-2",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-1 row-span-2",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-1 row-span-2",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-4",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-2",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-1",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-1",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-1",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-2",
-  },
-  {
-    className: "rounded-md bg-emerald-100 col-span-2 row-span-1",
-  },
-];
 
 export default function Home() {
   return (
@@ -102,8 +68,16 @@ export default function Home() {
       <div className="flex-1 h-full">
         {/* Grid container */}
         <div className="w-full h-full grid grid-cols-4 auto-rows-[76px] gap-10 overflow-y-auto p-4">
-          {GridItems2.map((item, index) => {
-            return <div key={index} className={item.className}></div>;
+          {siteConfig.items.map((item, index) => {
+            return (
+              <GridItem key={item.title + index} size={item.layout}>
+                {item.type === "social" ? (
+                  <SocialBox item={item} />
+                ) : (
+                  <div>Not implemented yet</div>
+                )}
+              </GridItem>
+            );
           })}
         </div>
       </div>
