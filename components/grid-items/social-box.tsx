@@ -25,7 +25,7 @@ const SocialBox = ({ item }: { item: GridItemInterface }) => {
       </div>
       {/* Content container */}
       <div className="mt-2">
-        <div className="text-lg font-semibold">{item.title}</div>
+        <div className="@md:text-lg font-semibold">{item.title}</div>
         <div className="text-sm text-neutral-500">{item.username}</div>
         <div className="text-sm text-neutral-500 mt-1 line-clamp-2">{item.description}</div>
       </div>

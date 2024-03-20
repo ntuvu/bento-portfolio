@@ -1,4 +1,4 @@
-export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4" | "4x4";
+export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4";
 
 export type GridItemType = "social" | "equipment" | "project" | "mentor";
 
@@ -68,7 +68,7 @@ const GridItems: GridItemInterface[] = [
     layout: "2x4",
     type: "equipment",
     title: "Video Equipments",
-    image: "/equipments-image.jpeg",
+    image: "/andree.png",
     equipments: [
       {
         title: "Sony A7III",
@@ -175,3 +175,4 @@ export const siteConfig = {
   email: "ntuvudev@gmail.com",
   items: GridItems,
 } as const;
+

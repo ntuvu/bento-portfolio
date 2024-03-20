@@ -17,9 +17,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sfpro)"],
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/container-queries")],
 };
 export default config;
