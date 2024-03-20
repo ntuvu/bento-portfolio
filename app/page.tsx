@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col xl:flex-row flex-1 gap-10 w-full h-full">
+    <main className="flex flex-col xl:flex-row flex-1 gap-10 w-full h-full">
       {/* Left side */}
       <LeftSide />
       {/* Right side */}

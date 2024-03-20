@@ -13,6 +13,7 @@ const variants = cva(
         "2x2": "md:col-span-2 col-span-full row-span-2 md:p-8 p-4",
         "2x4":
           "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
+        "4x1": "md:col-span-4 col-span-full row-span-1",
       },
     },
     defaultVariants: {
@@ -26,18 +27,7 @@ type GridItemProps = { children: React.ReactNode } & VariantProps<
 >;
 
 const GridItem = ({ size, children }: GridItemProps) => {
-  return (
-    <div
-      // initial={{
-      //   opacity: 0,
-      //   y: 60,
-      //   scale: 0.8,
-      // }}
-      className={cn(variants({ size }))}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn(variants({ size }))}>{children}</div>;
 };
 
 export default GridItem;

@@ -24,6 +24,7 @@ const Equipments = ({ item }: { item: GridItemInterface }) => {
                 className="px-2 py-1 text-sm font-medium bg-white rounded-lg dark:bg-neutral-900"
                 key={equipment.link + index}
                 href={equipment.link}
+                target="_blank"
               >
                 {equipment.title}
               </Link>

@@ -1,4 +1,4 @@
-export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4";
+export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4" | "4x1";
 
 export type GridItemType = "social" | "equipment" | "project" | "mentor";
 
@@ -30,117 +30,155 @@ export interface GridItemInterface {
 
 const GridItems: GridItemInterface[] = [
   {
-    layout: "2x2",
-    type: "social",
-    title: "Youtube",
-    icon: "youtube",
-    username: "@makrdev",
-    description:
-      "My true passion is learning and sharing my knowledge, which is why I started creating Youtube videos about web development, startups, and marketing.",
-    color: "#FF0000",
-    buttonTitle: "Subscribe",
-    buttonLink: "https://www.youtube.com/@makrdev",
-    buttonSecondaryText: "1.1K",
-  },
-  {
     layout: "1x2",
     type: "social",
-    title: "Discord",
-    icon: "discord",
-    username: "@makrdev",
-    buttonTitle: "Join",
+    title: "Linkedin",
+    icon: "linkedin",
+    username: "@ntuvu",
+    buttonTitle: "Connect",
     buttonLink: "https://discord.com/invite/5aXRp49Q4h",
-    buttonSecondaryText: "44",
-    color: "#5865F2",
+    buttonSecondaryText: "",
+    color: "#0b86ca",
   },
   {
     layout: "1x2",
     type: "social",
     title: "Github",
     icon: "github",
-    username: "@batuhanbilginn",
+    username: "@ntuvu",
     buttonTitle: "Follow",
-    buttonSecondaryText: "36",
-    buttonLink: "https://github.com/batuhanbilginn",
+    buttonSecondaryText: "",
+    buttonLink: "https://github.com/ntuvu",
     color: "#070707",
+  },
+  {
+    layout: "1x2",
+    type: "social",
+    title: "Facebook",
+    icon: "facebook",
+    username: "@tu.276",
+    buttonTitle: "Follow",
+    buttonSecondaryText: "",
+    buttonLink: "https://www.facebook.com/tu.276/",
+    color: "#1976d2",
+  },
+  {
+    layout: "1x2",
+    type: "social",
+    title: "Instagram",
+    icon: "instagram",
+    username: "@ntu.vu",
+    buttonTitle: "Follow",
+    buttonSecondaryText: "",
+    buttonLink: "https://www.instagram.com/ntu.vu/",
+    color: "#f17737",
   },
   {
     layout: "2x4",
     type: "equipment",
-    title: "Video Equipments",
-    image: "/andree.png",
+    title: "Frontend skills",
+    image: "/frontend.webp",
     equipments: [
       {
-        title: "Sony A7III",
-        link: "https://www.amazon.com/Sony-Full-frame-Mirrorless-Interchangeable-Lens-ILCE7M3K/dp/B07B45D8WV?&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=f91877e8350da1e43b161adac6e9a6d7&camp=1789&creative=9325",
+        title: "HTML",
+        link: "https://www.w3schools.com/html/",
       },
       {
-        title: "Tamron 24-75mm Sony-E Mount",
-        link: "https://www.amazon.com/s?k=tamron+24-75+f2.8+sony+e+mount&sprefix=tamron+24-75%252Caps%252C215&ref=nb_sb_ss_ts-doa-p_1_12&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=7f90fb483df302e8131afea2f4cd89bb&camp=1789&creative=9325",
+        title: "CSS",
+        link: "https://www.w3schools.com/css/",
       },
       {
-        title: "Thronmax Mdrill One Pro",
-        link: "https://www.amazon.com/s?k=thronmax+mdrill+one+pro&sprefix=thronmax%252Caps%252C213&ref=nb_sb_ss_ts-doa-p_7_8&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=ffb6dc2e55c74508300d2c5eac250e1e&camp=1789&creative=9325",
+        title: "Javascript",
+        link: "https://www.w3schools.com/js/",
       },
       {
-        title: "Godox SL-60W",
-        link: "https://www.amazon.com/s?k=godox+sl60&crid=2OZLC933LK7K0&sprefix=godox+sl60%252Caps%252C213&ref=nb_sb_noss_1&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=a9fcedfbfaff1bb1301c303a45055038&camp=1789&creative=9325",
+        title: "Typescript",
+        link: "https://www.w3schools.com/typescript/typescript_intro.php",
       },
       {
-        title: "Godox Umbrella Reflector Honeycom Grid",
-        link: "https://www.amazon.com/Godox-Umbrella-Reflector-Honeycomb-Speedlight/dp/B07H91VH4M/ref=sr_1_19?crid=3UE8NBEUUB1PI&keywords=godox+sl60+softbox&qid=1687880313&sprefix=godox+sl60+%252Caps%252C207&sr=8-19&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=7cb2f6734c70d44a3491266b50eac29c&camp=1789&creative=9325",
+        title: "React",
+        link: "https://react.dev/",
       },
       {
-        title: "Godox M1 RGB",
-        link: "https://www.amazon.com/s?k=godox+m1+rgb&crid=2UBYBKYSIYMDW&sprefix=godox+m1+rg%252Caps%252C199&ref=nb_sb_noss_2&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=3da7371f710f9f4f6af4f5817acc728a&camp=1789&creative=9325",
+        title: "Vue",
+        link: "https://vuejs.org/",
       },
       {
-        title: "Elgato Camlink 4K",
-        link: "https://www.amazon.com/s?k=camlink+4k%252B&sprefix=Camlink+%252Caps%252C210&ref=nb_sb_ss_ts-doa-p_1_8&_encoding=UTF8&tag=makrdev-20&linkCode=ur2&linkId=c95eae861d4db5e1de4ebda68507fbda&camp=1789&creative=9325",
+        title: "Angular",
+        link: "https://angular.io/",
+      },
+      {
+        title: "Next",
+        link: "https://nextjs.org/",
+      },
+      {
+        title: "Nuxt",
+        link: "https://nuxt.com/",
+      },
+      {
+        title: "Nuxt",
+        link: "https://nuxt.com/",
+      },
+      {
+        title: "Tailwind",
+        link: "https://tailwindcss.com/",
+      },
+      {
+        title: "Bootstrap",
+        link: "https://getbootstrap.com/",
       },
     ],
   },
   {
-    layout: "2x2",
-    type: "social",
-    title: "Twitter",
-    icon: "twitter",
-    username: "@makrdev",
-    buttonTitle: "Follow",
-    buttonLink: "https://twitter.com/makrdev",
-    buttonSecondaryText: "279",
-    color: "#1DA1F2",
-    description:
-      "Full-stack Developer / I build AI applications and create video tutorials on Youtube.",
+    layout: "2x4",
+    type: "equipment",
+    title: "Backend skills",
+    image: "/backend.webp",
+    equipments: [
+      {
+        title: "Java",
+        link: "https://www.w3schools.com/java/",
+      },
+      {
+        title: "C#",
+        link: "https://www.w3schools.com/cs/index.php",
+      },
+      {
+        title: "Spring boot",
+        link: "https://spring.io/guides/gs/spring-boot",
+      },
+      {
+        title: "Node",
+        link: "https://nodejs.org/en",
+      },
+      {
+        title: "RESTful API",
+        link: "https://www.youtube.com/watch?v=-MTSQjw5DrM",
+      },
+      {
+        title: "GraphQL",
+        link: "https://www.youtube.com/watch?v=eIQh02xuVw4",
+      },
+      {
+        title: "MongoDB",
+        link: "https://www.mongodb.com/",
+      },
+      {
+        title: "SQL",
+        link: "https://www.w3schools.com/sql/",
+      },
+    ],
   },
+  
   {
-    layout: "2x1",
+    layout: "4x1",
     type: "mentor",
-    title: "Next.js Mentorship",
-    icon: "superpeer",
-    promotion: "MAKRDEVFELLOWS",
-    oldPrice: "$100",
-    price: "$50",
-    buttonLink: "https://superpeer.com/makrdev/-/nextjs-mentor",
-  },
-  {
-    layout: "2x1",
-    type: "mentor",
-    title: "Supabase Mentorship",
-    icon: "superpeer",
-    promotion: "MAKRDEVFELLOWS",
-    oldPrice: "$100",
-    price: "$50",
-    buttonLink: "https://superpeer.com/makrdev/-/supabase-mentor",
-  },
-  {
-    layout: "2x1",
-    type: "project",
-    title: "makrAI",
-    icon: "github",
-    color: "#070707",
-    buttonLink: "https://github.com/batuhanbilginn/makr-ai",
-    stars: 73,
+    title: "My project",
+    icon: "",
+    promotion: "",
+    oldPrice: "",
+    price: "",
+    buttonLink: "",
   },
   {
     layout: "2x2",
@@ -175,4 +213,3 @@ export const siteConfig = {
   email: "ntuvudev@gmail.com",
   items: GridItems,
 } as const;
-
